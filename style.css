@@ -98,7 +98,7 @@ body {
     animation-iteration-count: infinite;
 }
 
-@keyframes anime {
+@keyframes loaderAnime {
     0% {
         font-family: "plain light";
         font-weight: 500;
@@ -249,6 +249,7 @@ body {
 #page4 {
     min-height: 100vh;
     width: 100%;
+    position: relative;
     background-color: #151515;
     padding: 7vh 0;
 }
@@ -262,16 +263,17 @@ body {
 #page4-content h1 {
     font-size: 7vw;
     text-transform: uppercase;
+    position: relative;
 }
 
 #page4-content .underline {
-    height: 2px;
+    height: 1px;
     width: 100%;
     background-color: #fff;
     margin: 5vw 0; 
 }
 
-#page4-content >p {
+#page4-content > p {
     font-size: 2.05vw;
     width: 50%;
     margin-bottom: 3vw;
@@ -296,7 +298,7 @@ body {
     width: 33vw;
     padding: 3vw;
     position: relative;
-    margin-top: -33vh;
+    margin-top: -35vh;
     margin-left: 26vw;
 }
 
@@ -314,13 +316,42 @@ body {
 }
 
 .blue-div-elem p {
-    width: 50%;
-    font-size: 0.7vw;
+    width: 40%;
+    font-size: 0.8vw;
 }
 
 #page5 {
     min-height: 100vh;
     width: 100%;
-    /* padding: 5vw 0; */
+    position: relative;
+}
+
+.elem {
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: -2vw;
+}
+
+.elem h1 {
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: transparent;
+    display: inline-block;
+    margin-right: 16px;
+    animation-name: anime;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translate3d(calc(-100% - 20px));
+    }
 }
 
