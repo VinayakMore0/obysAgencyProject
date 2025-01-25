@@ -254,6 +254,75 @@ body {
     min-height: 100vh;
     width: 100%;
     background-color: #151515;
+    padding: 17vh 2vw;
+    margin-bottom: 20vh;
+}
+
+#page3 h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 28vw;
+}
+
+#page3 h1::before {
+    content: "02";
+    position: absolute;
+    font-size: 3vw;
+    font-family: "silk serif";
+    left: -12%;
+    top: 8%;
+}
+
+#page3 .underline {
+    margin-left: 28vw;
+}
+
+#image-div-container {
+    padding: 1vw;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.image-div {
+    height: 38vw;
+    width: 25vw;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin: 2vw 0;
+}
+
+.image-div:nth-child(1) {
+    height: 29vw;
+    width: 21vw;
+}
+
+.image-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.page3-circle1 {
+    height: 23vw;
+    width: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 23vh;
+    margin-left: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3-circle1 svg {
+    height: 30%;
 }
 
 #page4 {
@@ -466,3 +535,15 @@ body {
     font-weight: 500;
     font-size: 1vw;
 }
+
+.canvas_container {
+    z-index: 999999 !important;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
