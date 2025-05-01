@@ -221,7 +221,7 @@ function footerAnimation() {
 loadingAnimation();
 cursorAnimation();
 locomotiveAnimation();
-// sheryAnimation();
+sheryAnimation();
 flagAnimation();
 footerAnimation();
 

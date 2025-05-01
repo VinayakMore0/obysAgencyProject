@@ -786,7 +786,7 @@ body {
 }
 
 
-.canvas_container {
+._canvas_container {
     z-index: 999999 !important;
     pointer-events: none;
 }
