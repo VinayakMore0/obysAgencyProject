@@ -55,11 +55,17 @@ function loadingAnimation() {
             }, 27);
         },
     });
-    
+  
     tl.to(".line h2", {
         animationName: "loaderAnime",
         opacity: 1,
     });
+
+    tl.from(".line h4", {
+        y: 150,
+        stagger: 0.25,
+        duration: 0.6,
+    });  
     
     tl.to("#loader", {
         opacity: 0,
@@ -83,7 +89,7 @@ function loadingAnimation() {
         opacity: 0,
     });
 
-    tl.from("#hero1 h1, #hero2 h1, #hero3 h2, #hero4 h1", {
+    tl.from("#hero1 h1, #hero2 h1, #hero3 h2, #hero3 h1, #hero4 h1", {
         y: 140,
         stagger: 0.2,
     });
