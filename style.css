@@ -217,19 +217,19 @@ a{
     padding: 2.3vw 5.5vw;
 }
 
-#part-1{
+#part-1 {
     display: flex;
     align-items: center;
     gap: 10vw;
 }
 
-#part-1 div{
+#part-1 div {
     display: flex;
     align-items: center;
     gap: 2.5vw;
 }
 
-#part-1 h3{
+#part-1 h3 {
     width: 5%;
     font-size: 1.1vw;
     font-weight: 100;
@@ -850,6 +850,33 @@ a{
 
 
 @media (max-width: 600px) {
+
+    .mousefollower {
+        display: none;
+    }
+
+    #part-1 {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #part-1 h3 {
+        display: none;
+    }
+
+    #part-1 div {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    #part-1 .menu-opener__square {
+        scale: 1;
+    }
 
     #loader {
         padding: 25vh 5vw;
